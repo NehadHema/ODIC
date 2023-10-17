@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Segoe+UI&family=Xanh+Mono:ital@0;1&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    /* font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";; */
+    color: #aaa;
+    background-color: #213f65;
+  
+}
+
+
+h1{
+  font-size: 52px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.18;
+}
+
+p{
+  font-size: 18px;
+  line-height: 1.8;
+  padding-top: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #898787;
+}
+
+/* Navbar part starts */
+
+.nav li .NavLink{
+  color: #fff;
+}
+/* Navbar part ends */
+
+/* Home part starts */
+.button{
+  background: -webkit-linear-gradient(0deg, #103f8b 0%, #1f6174 100%);
+  transition: all .4s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin-left: 20px;
+  padding: 13.5px 45px;
+}
+
+.imgs{
+  border-radius: 100px 300px 100px 100px;
+    box-shadow: 17px 9px 41px 14px rgb(0 0 0 / 12%);
+    width: 100%;
+}
+
+.feature_part{
+  background-color: rgb(224, 218, 218);
+}
+
+.single_feature_part{
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 5%);
+     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+     margin: 3% 3% 3% 3%;
+    --e-column-margin-right: 3%;
+    --e-column-margin-left: 3%;
+    padding: 14% 14% 14% 14%;
+    border-radius: 15px 15px 15px 70px; 
+}
+
+
+.single_feature_part:hover{
+    border-radius: 15px 15px 15px 70px;
+    border:2px solid #3d7ac7;
+    color: #103f8b;
+
+}
+
+.single_feature_part span{
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto 50px 50px;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    color: #0078ff;
+}
+.single_feature_part span:hover{
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.single_feature_part i{
+  
+  font-size: 50px;
+  text-align: center;
+  
+}
+
+.single_feature_part h4{
+  color:#0078ff;
+}
+.single_feature_text h2{
+  color:#3d7ac7;
+}
+/* Home part ends */
+
+
+
+/* Services part starts */
+
+.color{
+  color:#3d7ac7;
+}
+/* Services part ends */
+
+
+/*=================== contact banner start ====================*/
+
+.contact-info{
+  margin-bottom: 25px;
+}
+
+
+.contact-info__icon{
+    margin-right: 20px;
+ }
+
+ .contact-info i,span{
+      color: #3d7ac7;
+      font-size: 27px;
+    }
+  
+
+  .media-body h3{
+      font-size: 16px;
+      margin-bottom: 0;
+      font-size: 16px;
+      color: #2a2a2a;
+  }
+  .media-body a:hover{
+          color: red;
+        }
+     
+
+        .media-body p{
+      color: #8a8a8a;
+    }
+ 
+
+/*=================== contact banner end ====================*/
+
+
+/*=================== contact form start ====================*/
+.contact-title{
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form-contact label{
+    font-size: 14px;
+  }
+
+  .form-group{
+    margin-bottom: 30px;
+  }
+  .form-group .btn_1{
+      margin-bottom: -30px;
+    }
+  
+
+  .form-control{
+    border: 1px solid #3d7ac7;
+    border-radius: 5px;
+    height: 48px;
+    padding-left: 18px;
+    font-size: 13px;
+    background: transparent;
+  }
+
+    .form-control:focus{
+      outline: 0;
+      box-shadow: none;
+    }
+
+    .form-control::placeholder{
+      font-weight: 300;
+      color: #999999;
+    }
+  
+
+  textarea{
+    border-radius: 12px;
+    height: 100% !important;
+  }
+
+
+/*=================== contact form end ====================*/
+
+/* Contact Success and error Area css
+============================================================================================ */
+
+
+.modal-message .modal-dialog {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) !important;
+        margin: 0px;
+        max-width: 500px;
+        width: 100%;
+}
+.modal-message .modal-content .modal-header {
+                text-align: center;
+                display: block;
+                border-bottom: none;
+                padding-top: 50px;
+                padding-bottom: 50px;
+}
+.modal-message .modal-content .modal-header.close {
+                    position: absolute;
+                    right: -15px;
+                    top: -15px;
+                    padding: 0px;
+                    color: #fff;
+                    opacity: 1;
+                    cursor: pointer;
+                }
+                .modal-message .modal-content .modal-header h2 {
+                    display: block;
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+                .modal-message .modal-content .modal-header p {
+                    display: block;
+                }
+ 
+
+
+/* footar part starts */
+footer{
+  background-color: #212529;
+}
+
+.copyright{
+  background-color: #213f65;
+}
+
+.contact_info span{
+font-size: 18px;
+font-weight: 600;
+color: #213f65;
+}
+
+/* footar part ends */
