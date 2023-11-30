@@ -15,7 +15,7 @@ export default function About() {
   <div className="container mt-5 mb-5 pt-5 pb-5">
     <div className="row pt-5">
        <div className="mt-5 pt-5 text-center" data-aos="fade-right">
-            <h1>About US</h1>           
+            <h1 className='white'>About US</h1>           
         </div>
     </div>
   </div>

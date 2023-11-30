@@ -15,7 +15,7 @@ export default function Contactus() {
   <div className="container mt-5 mb-5 pt-5 pb-5">
     <div className="row pt-5">
        <div className="mt-5 pt-5 text-center" data-aos="fade-right">
-            <h1>Contact US</h1>           
+            <h1 className='white'>Contact US</h1>           
         </div>
     </div>
   </div>
@@ -69,21 +69,20 @@ export default function Contactus() {
       <div className="media contact-info d-flex">
         <span className="contact-info__icon"><i class="fa-solid fa-house"></i></span>
         <div className="media-body">
-          <h3>Tanta,Egypt</h3>
-          <p>Bahr Street</p>
+          <h3>Egypt, Cairo <br/>Egypt, Sohag</h3>
         </div>
       </div>
       <div className="media contact-info d-flex">
         <span className="contact-info__icon"><i class="fa-solid fa-phone"></i></span>
         <div className="media-body">
-          <h3>01201874003</h3>
+          <h3>+201128152821</h3>
           <p></p>
         </div>
       </div>
       <div className="media contact-info d-flex">
         <span className="contact-info__icon"><i class="fa-solid fa-envelope"></i></span>
         <div className="media-body">
-          <h3>engnehad2021@gmail.com</h3>
+          <h3>original.gaol@gmail.com</h3>
           <h5>Send us your query anytime!</h5>
         </div>
       </div>

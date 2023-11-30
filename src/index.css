@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Segoe+UI&family=Xanh+Mono:ital@0;1&display=swap');
 
+:root{
+  --mainColor:#212224;
+  --mainBackgroundColor: #11af75;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    /* font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";; */
-    color: #aaa;
-    background-color: #213f65;
-  
+    color:var(--mainColor) ;
+    background-color: var(--mainBackgroundColor);
+    /* to remove the scorallbar */
+    overflow-x:hidden;
 }
-
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #eee;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--mainBackgroundColor);
+  border-radius: 1rem;
+}
 
 h1{
   font-size: 52px;
@@ -25,24 +38,49 @@ p{
   line-height: 1.8;
   padding-top: 15px;
   font-family: "Roboto", sans-serif;
-  color: #898787;
+  color: #000;
 }
 
+.white{
+  color: #fff;
+}
+
+.NavLink{
+  cursor: cell;
+  color: var(--mainBackgroundColor);
+}
+
+select{
+background-color: #212529;
+color: white;
+border: none;
+}
 /* Navbar part starts */
+.navbar-toggler-icon {
+  background-image: rgb(68, 155, 155);
+}
+
+.navbar button{
+background-color:var(--mainBackgroundColor);
+}
 
 .nav li .NavLink{
-  color: #fff;
+  color: var(--mainBackgroundColor);
 }
 /* Navbar part ends */
 
 /* Home part starts */
 .button{
-  background: -webkit-linear-gradient(0deg, #103f8b 0%, #1f6174 100%);
+  background: -webkit-linear-gradient(0deg, #14d28c 0%, #08895a 100%);
   transition: all .4s ease-in-out;
   border: 1px solid transparent;
   border-radius: 50px;
   margin-left: 20px;
   padding: 13.5px 45px;
+}
+
+.button:hover{
+  color:#fff;
 }
 
 .imgs{
@@ -66,11 +104,10 @@ p{
     border-radius: 15px 15px 15px 70px; 
 }
 
-
 .single_feature_part:hover{
     border-radius: 15px 15px 15px 70px;
-    border:2px solid #3d7ac7;
-    color: #103f8b;
+    border:2px solid #0CEB9A;
+    color: #0CEB9A;
 
 }
 
@@ -86,13 +123,13 @@ p{
     line-height: 1.55;
     margin: 0 auto 50px 50px;
     text-align: center;
-    box-shadow: 0 0 0 10px #0078ff;
-    color: #0078ff;
+    box-shadow: 0 0 0 10px #0CEB9A;
+    color: #0CEB9A;
 }
 .single_feature_part span:hover{
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
+  background-color: #0CEB9A;
   box-shadow: 0 0 0 10px #cde1f8;
 }
 
@@ -104,36 +141,88 @@ p{
 }
 
 .single_feature_part h4{
-  color:#0078ff;
+  color:#0CEB9A;
 }
 .single_feature_text h2{
-  color:#3d7ac7;
+  color:#0CEB9A;
 }
 /* Home part ends */
 
+/* Marketing part starts */
+
+/* Marketing part ends */
 
 
 /* Services part starts */
 
 .color{
-  color:#3d7ac7;
+  color:#0CEB9A;
+}
+.offerings{
+  font-size: 45px;
+  font-weight: 700;
 }
 /* Services part ends */
 
+/*portfolio part starts*/
 
-/*=================== contact banner start ====================*/
+.parent{
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 5%);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  border-radius: 15px 15px 15px 15px; 
+  position:relative;
+
+}
+.img3{
+  transform: translateY(-100%) translateX(20%);
+  width: 60%;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.img3 span{
+  transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto 0px 50px;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0CEB9A;
+    color: var(--mainBackgroundColor);
+    font-size: 40px;
+}
+
+.img3 span:hover{
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #0CEB9A;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+.parent h5{
+ padding-bottom: 0 !important;
+}
+
+/*portfolio part ends*/
+
+
+
+/*contact us starts*/
 
 .contact-info{
   margin-bottom: 25px;
 }
-
 
 .contact-info__icon{
     margin-right: 20px;
  }
 
  .contact-info i,span{
-      color: #3d7ac7;
+      color: #0CEB9A;
       font-size: 27px;
     }
   
@@ -154,10 +243,6 @@ p{
     }
  
 
-/*=================== contact banner end ====================*/
-
-
-/*=================== contact form start ====================*/
 .contact-title{
   font-size: 27px;
   font-weight: 600;
@@ -177,7 +262,7 @@ p{
   
 
   .form-control{
-    border: 1px solid #3d7ac7;
+    border: 1px solid #0CEB9A;
     border-radius: 5px;
     height: 48px;
     padding-left: 18px;
@@ -200,13 +285,6 @@ p{
     border-radius: 12px;
     height: 100% !important;
   }
-
-
-/*=================== contact form end ====================*/
-
-/* Contact Success and error Area css
-============================================================================================ */
-
 
 .modal-message .modal-dialog {
         position: absolute;
@@ -242,7 +320,7 @@ p{
                     display: block;
                 }
  
-
+/*contact us ends*/
 
 /* footar part starts */
 footer{
@@ -250,13 +328,15 @@ footer{
 }
 
 .copyright{
-  background-color: #213f65;
+  background-color: var(--mainBackgroundColor);
 }
 
 .contact_info span{
 font-size: 18px;
 font-weight: 600;
-color: #213f65;
+color: var(--mainBackgroundColor);
 }
 
 /* footar part ends */
+
+

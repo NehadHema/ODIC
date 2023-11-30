@@ -19,17 +19,24 @@ export default function Navbar() {
         <NavLink className="nav-link text-white active" aria-current="page" to={'about'}>About</NavLink>
         </li>
         <li className="nav-item">
+        <NavLink className="nav-link text-white active" aria-current="page" to={'works'}>Works</NavLink>
+        </li>
+        <li className="nav-item">
         <NavLink className="nav-link text-white active" aria-current="page" to={'services'}>Services</NavLink>
         </li>
         <li className="nav-item">
         <NavLink className="nav-link text-white active" aria-current="page" to={'contactus'}>Contact Us</NavLink>
         </li>
-        <li className="nav-item">
+        <select name="" id="">
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+        </select>
+        {/* <li className="nav-item">
         <NavLink className="nav-link text-white active" aria-current="page" to={''}>English</NavLink>
         </li>
         <li className="nav-item">
         <NavLink className="nav-link text-white active" aria-current="page" to={''}>اللغة العربية</NavLink>
-        </li>
+        </li> */}
       </ul>
     
     </div>

@@ -17,13 +17,13 @@ export default function Footer() {
                     </div>
                 </div>
                 
-                <div class="col-xl-6 col-sm-6 col-md-6">
+                <div class="col-sm-6 col-md-6 col-xl-6">
                     <div class="single-footer-widget footer_2 ps-5">
-                        <h2>Contact Us</h2>
+                        <h2 className='white'>Contact Us</h2>
                         <div class="contact_info">
-                            <p><span> Address :</span> Cairo </p>
-                            <p><span> Phone :</span> 01201784521</p>
-                            <p><span> Email : </span> nehad@y.com</p>
+                            <p className='white'><span> Address :</span> Egypt, Cairo <br/>Egypt,Sohag </p>
+                            <p className='white'><span> Phone :</span> +201128152821</p>
+                            <p className='white'><span> Email : </span> original.gaol@gmail.com</p>
                         </div>
                     </div>
                 </div>
